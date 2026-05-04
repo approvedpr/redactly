@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffaf1;
+  --foreground: #17130f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #b8ff5c;
+  color: #17130f;
+}
+
+* {
+  scrollbar-color: #17130f #f2eadc;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  content: "";
+  background:
+    radial-gradient(circle at 12% 8%, rgba(184, 255, 92, 0.55), transparent 22rem),
+    radial-gradient(circle at 86% 2%, rgba(125, 211, 252, 0.45), transparent 24rem),
+    radial-gradient(circle at 80% 75%, rgba(253, 224, 71, 0.38), transparent 22rem),
+    #fffaf1;
+}
+
+body::after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image: radial-gradient(rgba(23, 19, 15, 0.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.55;
+}

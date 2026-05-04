@@ -20,6 +20,9 @@
 # production
 /build
 
+# generated assets
+/public/pdf.worker.mjs
+
 # misc
 .DS_Store
 *.pem

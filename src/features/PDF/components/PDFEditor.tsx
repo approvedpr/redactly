@@ -358,7 +358,7 @@ export default function PDFEditor({
           onClick={onExport}
           className="rounded-full border border-stone-950/10 bg-lime-200 px-5 py-3 text-sm font-bold text-stone-950 transition enabled:hover:-translate-y-0.5 enabled:hover:bg-lime-300 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          Export clean PDF
+          Export Redacted Copy
         </button>
         <button
           type="button"
